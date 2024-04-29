@@ -1,2 +1,2 @@
 # Snake-game
-sname game using tailwind
+snake game using tailwind
