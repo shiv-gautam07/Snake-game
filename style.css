@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #00000064;
+  background-image: url("snake-img.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-blend-mode: overlay;
+}

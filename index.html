@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="text-gray-800 w-screen h-screen overflow-x-hidden px-4">
+    <h1 class="text-4xl font-bold mt-4 text-center">Snake Game</h1>
+    <div class="w-full flex items-center justify-between px-4 mt-8 flex-wrap">
+      <div
+        id="left"
+        class="flex flex-col items-end justify-center flex-grow gap-12 pr-4"
+      >
+        <div id="left-first" class="flex flex-col items-center justify-center">
+          <div id="instructions">
+            <h4 class="font-bold text-3xl text-green-500">Instructions:</h4>
+            <ul class="list-disc font-bold text-green-500">
+              <li>Press any arrow key to start the game</li>
+              <li>Up & Down arrow to go up or down.</li>
+              <li>Left & Right arrow to go left or right and turn.</li>
+              <li>The game will be over if u hit one of the edges.</li>
+            </ul>
+          </div>
+          <div
+            id="game-over-message"
+            class="mt-4 text-yellow-500 font-bold"
+          ></div>
+          <button
+            id="restart-button"
+            class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded hidden"
+          >
+            Restart
+          </button>
+          <div id="score-display" class="mt-4 text-green-500 font-bold">
+            Score: 0
+          </div>
+        </div>
+      </div>
+      <canvas id="board" class="border-4 border-blue-500 rounded-lg"></canvas>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
